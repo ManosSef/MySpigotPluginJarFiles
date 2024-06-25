@@ -1,0 +1,5 @@
+BUILD 100
+
+Changes
+- Puzzle rendering in chat was moved to separate class me.manossef.cheapsquaredle.MessageRenderer
+- openPuzzles map and enabledHints set in main class were made private and given accessor and mutator methods

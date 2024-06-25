@@ -1,0 +1,19 @@
+BUILD 103
+
+Additions
+- Added a puzzle solver class
+	- Currently not used for anything
+
+Changes
+- Hints can now be disabled again after being enabled
+- The command for enabling hints has been changed to "/squaredle hints", and now disables hints if used while hints
+are enabled
+- The puzzle output in chat now includes clickable text for enabling/disabling hints if the minimum score for hints
+has been reached
+- The plugin no longer supports Minecraft versions before 1.17
+- The plugin now requires the commons-collections4 library (version 4.4)
+	- The server should download it automatically
+
+Fixes
+- CS-1 - "Exit puzzle" and "Show stats for this puzzle" in chat puzzle output don't do anything when clicked
+- Fixed two words in the banned guesses list that had a space and thus weren't considered banned guesses

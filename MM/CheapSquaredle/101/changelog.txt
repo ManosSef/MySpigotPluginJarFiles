@@ -1,0 +1,4 @@
+BUILD 101
+
+Changes
+- The puzzle output in chat now includes clickable text for closing the puzzle and viewing the score

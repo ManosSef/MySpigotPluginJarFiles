@@ -1,0 +1,4 @@
+BUILD 2
+
+Changes
+- Changed a chat message sent by the plugin's command to make it more accurate
