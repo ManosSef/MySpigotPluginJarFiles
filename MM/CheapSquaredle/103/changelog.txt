@@ -6,10 +6,8 @@ Additions
 
 Changes
 - Hints can now be disabled again after being enabled
-- The command for enabling hints has been changed to "/squaredle hints", and now disables hints if used while hints
-are enabled
-- The puzzle output in chat now includes clickable text for enabling/disabling hints if the minimum score for hints
-has been reached
+- The command for enabling hints has been changed to "/squaredle hints", and now disables hints if used while hints are enabled
+- The puzzle output in chat now includes clickable text for enabling/disabling hints if the minimum score for hints has been reached
 - The plugin no longer supports Minecraft versions before 1.17
 - The plugin now requires the commons-collections4 library (version 4.4)
 	- The server should download it automatically
