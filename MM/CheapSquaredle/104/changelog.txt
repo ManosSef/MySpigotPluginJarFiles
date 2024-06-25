@@ -5,7 +5,6 @@ Additions
 	- Currently has no effect
 
 Fixes
-- CS-3 - The bonus word popup that appears the first time a bonus word is found has no space between the first
-sentence and the rest of the text
+- CS-3 - The bonus word popup that appears the first time a bonus word is found has no space between the first sentence and the rest of the text
 - CS-5 - The clickable text that enables hints uses the old command format
 - CS-6 - The popup for finding all bonus words in a puzzle has ASCII art that renders wrongly in Minecraft's font
