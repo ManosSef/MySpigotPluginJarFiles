@@ -3,5 +3,4 @@ BUILD 101 (2.5.3)
 SINCE LAST STABLE RELEASE (2.5.2)
 
 Fixes
-- SH-1 - Error when enabling plugin / java.lang.NullPointerException: Cannot invoke
-"java.util.Map.containsKey(Object)" because "this.addonsToBeChecked" is null
+- SH-1 - Error when enabling plugin / java.lang.NullPointerException: Cannot invoke "java.util.Map.containsKey(Object)" because "this.addonsToBeChecked" is null
