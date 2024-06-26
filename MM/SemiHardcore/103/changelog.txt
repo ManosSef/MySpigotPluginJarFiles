@@ -1,0 +1,4 @@
+BUILD 103
+
+Fixes
+- SH-2 - The warning for failing to check plugin and add-ons for updates always appears if not all add-ons have been installed on the server
