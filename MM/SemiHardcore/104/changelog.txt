@@ -1,0 +1,8 @@
+BUILD 104
+
+Additions
+- Added a placeholder expansion class, which registers the plugin's placeholders if PlaceholderAPI is loaded and enabled
+- Added the placeholder %semihardcore_lives%, which returns the player's life count
+
+Changes
+- The plugin now soft-depends on PlaceholderAPI

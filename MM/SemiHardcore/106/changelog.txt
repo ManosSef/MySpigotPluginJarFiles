@@ -1,0 +1,22 @@
+BUILD 106 (2.6.0)
+
+SINCE LAST STABLE RELEASE (2.5.3)
+
+Additions
+- Added a placeholder expansion class, which registers the plugin's placeholders if PlaceholderAPI is loaded and enabled
+- Added the following placeholders:
+	- %semihardcore_lives%, which returns the player's life count
+	- %semihardcore_lives_limit%, which returns the life limit
+	- %semihardcore_starting_lives_min%, which returns the minimum starting lives
+	- %semihardcore_starting_lives_max%, which returns the maximum starting lives
+
+Changes
+- The plugin now soft-depends on PlaceholderAPI
+
+Fixes
+- SH-2 - The warning for failing to check plugin and add-ons for updates always appears if not all add-ons have been installed on the server
+
+SINCE LAST BUILD (105)
+
+Changes
+- Bumped placeholder expansion version to 2.6.0 to match plugin version

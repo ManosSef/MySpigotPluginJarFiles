@@ -1,0 +1,10 @@
+BUILD 105
+
+Additions
+- Added the following placeholders:
+	- %semihardcore_lives_limit%, which returns the life limit
+	- %semihardcore_starting_lives_min%, which returns the minimum starting lives
+	- %semihardcore_starting_lives_max%, which returns the maximum starting lives
+
+Changes
+- Bumped placeholder expansion version to 1.0.1
