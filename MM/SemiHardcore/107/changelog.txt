@@ -1,0 +1,4 @@
+BUILD 107
+
+Fixes
+- SH-6 - Respawning with hardcore hearts enabled makes the player a spectator even if they have lives left
