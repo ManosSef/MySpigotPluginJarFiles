@@ -1,0 +1,8 @@
+BUILD 110
+
+Additions
+- Added config option "lifesteal"
+	- If true, players with 2 or fewer lives gain 1 life if they kill a player with 4 or more lives
+- Added some new API methods for convenience
+	- LifeChanges#addLifeUpToLimit(Player): runs #addLife(Player) and then #respectLivesLimit(Player)
+	- LifeChanges#setLivesUpToLimit(Player, int): runs #setLives(Player, int) and then #respectLivesLimit(Player)

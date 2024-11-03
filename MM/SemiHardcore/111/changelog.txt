@@ -1,0 +1,4 @@
+BUILD 111
+
+Fixes
+- SH-9 - Having more than 3 lives and dying in any way other than by another player causes an error
