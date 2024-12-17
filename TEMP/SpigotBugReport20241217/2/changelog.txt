@@ -1,0 +1,5 @@
+BUILD 2
+
+Changes
+- The debug message now only appears when a living entity is damaged
+- The debug message now includes the damaged entity's no damage ticks

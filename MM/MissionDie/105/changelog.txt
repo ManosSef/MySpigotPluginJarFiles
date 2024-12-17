@@ -1,0 +1,8 @@
+BUILD 105
+
+Changes
+- Removed the debug message sent when a player is damaged
+
+Fixes
+- OTHER-30 - All arguments of /mytasks tab complete player names
+- OTHER-106 - Players can sometimes complete tasks without actually dying

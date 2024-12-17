@@ -1,0 +1,4 @@
+BUILD 106
+
+Fixes
+- OTHER-108 - Dying quickly after taking damage sometimes causes a death task to not be completed

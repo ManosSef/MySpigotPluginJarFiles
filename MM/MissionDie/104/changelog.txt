@@ -1,0 +1,7 @@
+BUILD 104
+
+Additions
+- Added a debug message when a player is damaged
+
+Fixes
+- OTHER-107 - Dying to a sweet berry bush or a stalagmite without having died to a cactus also completes the CACTUS death task

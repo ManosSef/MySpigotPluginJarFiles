@@ -1,0 +1,4 @@
+BUILD 3
+
+Changes
+- Plugin is now backwards-compatible with Java 17

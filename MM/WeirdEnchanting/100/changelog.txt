@@ -1,0 +1,7 @@
+BUILD 100
+
+Changes
+- All offers given when inserting an item into an enchanting table are now filled in randomly, instead of keeping some empty
+
+Fixes
+- OTHER-77 - Inserting an item into an enchanting table causes errors

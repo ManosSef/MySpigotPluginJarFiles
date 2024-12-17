@@ -1,0 +1,8 @@
+BUILD 100
+
+Changes
+- Dropped support for Minecraft versions before 1.21
+- Potions of Raid Omen and Trial Omen can now be crafted
+
+Fixes
+- OTHER-53 - Trying to craft one of the plugin's potions causes an error

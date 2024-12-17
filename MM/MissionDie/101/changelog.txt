@@ -1,0 +1,4 @@
+BUILD 101
+
+Fixes
+- OTHER-104 - Taking fatal damage immediately after the player's invulnerability ticks reach 0 stops a death task from being completed

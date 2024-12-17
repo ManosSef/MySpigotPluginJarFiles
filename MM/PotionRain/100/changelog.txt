@@ -1,0 +1,4 @@
+BUILD 100
+
+Fixes
+- OTHER-55 - Enabling the potion rain with radius 0 causes errors every 4 ticks

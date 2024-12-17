@@ -1,0 +1,6 @@
+BUILD 100
+
+Fixes
+- OTHER-31 - Loading the plugin while players are online and using /mytasks results in an error
+- OTHER-32 - Loading the plugin while players are online and trying to do a death task causes an error
+- OTHER-36 - Players can sometimes complete tasks without actually dying
