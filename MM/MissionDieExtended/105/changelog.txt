@@ -1,0 +1,4 @@
+BUILD 105
+
+Fixes
+- OTHER-141 - Trying to take fatal damage while on invulnerability ticks can cause an error

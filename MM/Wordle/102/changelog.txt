@@ -1,0 +1,7 @@
+BUILD 102
+
+Additions
+- When debug is enabled, a message confirming it is printed in the console
+
+Fixes
+- OTHER-79 - Exiting and rejoining the server removes all Wordle progress made by the player in that session

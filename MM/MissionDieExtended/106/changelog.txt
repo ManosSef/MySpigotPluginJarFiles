@@ -1,0 +1,4 @@
+BUILD 106
+
+Fixes
+- OTHER-140 - Players can sometimes complete tasks without actually dying

@@ -1,0 +1,4 @@
+BUILD 100
+
+Fixes
+- OTHER-46 - Running /oploot with a rarity less than 1 or greater than 5 causes an error

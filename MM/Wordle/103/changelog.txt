@@ -1,0 +1,4 @@
+BUILD 103
+
+Fixes
+- OTHER-79 - Exiting and rejoining the server removes all Wordle progress made by the player in that session

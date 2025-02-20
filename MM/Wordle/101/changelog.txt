@@ -1,0 +1,4 @@
+BUILD 101
+
+Fixes
+- OTHER-115 - Enabling the plugin causes an error

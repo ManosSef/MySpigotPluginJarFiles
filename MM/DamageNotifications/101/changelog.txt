@@ -1,0 +1,21 @@
+BUILD 101 (2.1.0)
+
+SINCE LAST STABLE RELEASE (2.0.0)
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+
+Fixes
+- OTHER-5 - All arguments of /damagenotifications except the first one tab complete player names
+- OTHER-10 - The first argument of /damagenotifications always tab completes "reload"
+- OTHER-11 - The error message sent when running /damagenotifications with no arguments is missing a period
+- OTHER-14 - The error message sent when running /damagenotifications with an invalid argument is missing a period
+- OTHER-129 - Damage notifications are displayed even when not taking actual damage
+- OTHER-131 - The config version checking messages are not sent by the plugin's logger
+- OTHER-145 - The description of /damagenotifications is missing an article
+
+SINCE LAST BUILD (100)
+
+Fixes
+- OTHER-146 - The first argument of /damagenotifications only tab completes "reload" if "reload" starts with the entered argument

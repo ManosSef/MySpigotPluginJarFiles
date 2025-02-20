@@ -1,0 +1,9 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+- The plugin now checks if the OPLootBase plugin that exists on the server is the correct one
+
+Fixes
+- OTHER-50 - OP loot is spawned if a player on half a heart takes damage during their invulnerability ticks after a previous hit

@@ -1,0 +1,4 @@
+BUILD 108
+
+Fixes
+- OTHER-144 - The ANVIL task can only be completed with undamaged anvils

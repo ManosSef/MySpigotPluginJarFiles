@@ -1,0 +1,4 @@
+BUILD 100
+
+Fixes
+- OTHER-48 - Dropping an apple from a stack of more than 1 spawns OP loot without consuming the apple

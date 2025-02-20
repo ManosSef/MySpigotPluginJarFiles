@@ -1,0 +1,9 @@
+BUILD 101
+
+Changes
+- Moved the PLAYER_ENDER_PEARL_FALL task down in the book shown when running /mytasks so that it's together with other projectile tasks
+
+Fixes
+- OTHER-123 - The TNT_MINECART and END_CRYSTAL tasks are missing from the book shown when running /mytasks
+- OTHER-124 - The PLAYER_ENDER_PEARL_FALL task cannot be completed
+- OTHER-126 - Tasks are not saved correctly in the config file

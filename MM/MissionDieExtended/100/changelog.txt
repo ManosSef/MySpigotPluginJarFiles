@@ -1,0 +1,20 @@
+BUILD 100
+
+Additions
+- Added the following tasks: BOGGED_THORNS, BOGGED_ARROW, BOGGED_FIREBALL, BREEZE_FIREBALL, DISPENSER_WIND_CHARGE, BOGGED_WIND_CHARGE, BREEZE_WIND_CHARGE, PILLAGER_WIND_CHARGE, PLAYER_WIND_CHARGE, SKELETON_WIND_CHARGE, SNOW_GOLEM_WIND_CHARGE, STRAY_WIND_CHARGE, BOGGED_TNT, BOGGED_FIREBALL_EXPLOSION, BREEZE_FIREBALL_EXPLOSION
+
+Changes
+- Minecraft versions before 1.21 are no longer supported
+- The plugin now tries to fit any death by entities into a possible death task created by following common patterns, instead of checking a lot of specific entities one by one
+	- A message is printed to the console if a death task that could be given does not exist, so that missing cases that would warrant death tasks can be noticed
+- The book shown when running the /mytasks command is now dynamically generated instead of every line being hardcoded
+	- Tasks added in 1.19 or later are no longer collected on the last page
+- The tasks in the book shown when running /mytasks have been reordered
+- The tasks SKELETON_ATTACK and STRAY_ATTACK have been removed as they are no longer possible to complete in survival without commands
+
+Fixes
+- OTHER-33 - Loading the plugin while players are online and trying to do a death task causes an error
+- OTHER-34 - Loading the plugin while players are online and using /mytasks results in an error
+- OTHER-35 - Players can sometimes complete tasks without actually dying
+- OTHER-121 - The message sent in the console when a death task is completed is not sent by the plugin's logger
+- OTHER-122 - The first page of the book shown when running /mytasks is missing some articles

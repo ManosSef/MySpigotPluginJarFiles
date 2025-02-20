@@ -1,0 +1,7 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.18
+
+Fixes
+- OTHER-68 - The plugin unnecessarily changes the block at (0, 60, 0) in the End to end stone if there are other blocks at coordinates x=0, z=0

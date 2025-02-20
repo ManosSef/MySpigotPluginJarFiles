@@ -1,0 +1,21 @@
+BUILD 102
+
+Additions
+- Added the /removetask command, which removes a specified task or all tasks from a player
+- Usage:
+	- /removetask <player> * - Removes all tasks from the specified player
+	- /removetask <player> <task> - Removes the specified task from the specified player
+
+Changes
+- Removed the MAGIC task as there was no way to complete it that wasn't covered by other more specific tasks
+
+Fixes
+- OTHER-125 - /addtask succeeds even when the player already has the specified task
+- OTHER-127 - The *_POTION tasks cannot be completed
+- OTHER-133 - The CAMPFIRE and SOUL_CAMPFIRE tasks cannot be completed
+- OTHER-134 - The *_AREA_EFFECT_CLOUD tasks cannot be completed
+- OTHER-135 - Tasks are not completed if the fatal damage was taken during invulnerability ticks
+- OTHER-136 - The *_WIND_CHARGE tasks do not also check for breeze wind charges
+- OTHER-137 - The EVOKER_FANGS task cannot be completed
+- OTHER-138 - The TNT and *_TNT tasks cannot be completed
+- OTHER-139 - The DISPENSER_FIREWORK task cannot be completed

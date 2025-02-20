@@ -1,0 +1,5 @@
+BUILD 104
+
+Fixes
+- OTHER-116 - When "debug" is enabled, no message confirming it is printed
+- OTHER-117 - Deleting or editing the config file while the server is running does not cause the plugin to save it when disabled
