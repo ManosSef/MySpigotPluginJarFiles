@@ -18,4 +18,4 @@ Fixes
 SINCE LAST BUILD (100)
 
 Fixes
-- OTHER-146 - The first argument of /damagenotifications only tab completes "reload" if "reload" starts with the entered argument
+- OTHER-146 - The first argument of /damagenotifications only tab completes "reload" if "reload" does not start with the entered argument
