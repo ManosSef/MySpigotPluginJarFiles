@@ -1,0 +1,11 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.18
+
+Fixes
+- WM-1 - Entities disappear when using portals in custom worlds
+- WM-2 - Coordinates are multiplied by 8 instead of divided when using a portal to teleport from a custom End to its associated Nether
+- WM-3 - The warning message sent when the world a player is in is about to be deleted is grammatically incorrect
+- WM-4 - The /deleteworld command assumes the main world is always called "world"
+- WM-5 - Entering an end portal in a custom world places the entity 1 block too high in the End

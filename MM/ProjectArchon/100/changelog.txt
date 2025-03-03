@@ -1,0 +1,9 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+
+Fixes
+- OTHER-56 - Disabling the plugin doesn't revert the world border back to its normal size
+- OTHER-57 - The plugin resets the world border's size to 1 block when enabled, no matter what it was on a previous load

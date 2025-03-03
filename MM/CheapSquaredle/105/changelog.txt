@@ -1,0 +1,11 @@
+BUILD 105
+
+Changes
+- The plugin now requires Java 17 or newer
+
+Fixes
+- CS-8 - The clickable text that enables hints is shown even when the open puzzle is completed
+- CS-9 - Hints can be enabled even after the open puzzle is completed
+- CS-10 - The popup for finding all bonus words in a puzzle has more problems in the ASCII art
+- CS-12 - Running /squaredle with no arguments prints both an error message and the command's usage
+- CS-13 - The error message sent when running /squaredle with no arguments is missing a period

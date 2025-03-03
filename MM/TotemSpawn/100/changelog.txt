@@ -1,0 +1,10 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+
+Fixes
+- OTHER-71 - Loading the plugin while the server is already running doesn't give every existing mob totems
+- OTHER-72 - Loading the plugin while players are online replaces the items in their selected hotbar slot and off hand with totems
+- OTHER-73 - The plugin can give totems to players who have been given totems before

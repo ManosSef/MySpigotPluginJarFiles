@@ -1,0 +1,9 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+
+Fixes
+- OTHER-22 - Dying to an ender dragon's breath does not display the fake advancement message
+- OTHER-23 - The fake advancement message sometimes shows without actually being killed

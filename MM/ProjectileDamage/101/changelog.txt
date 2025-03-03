@@ -1,0 +1,7 @@
+BUILD 101
+
+Changes
+- Fishing bobbers no longer deal damage
+
+Fixes
+- OTHER-154 - Fishing bobbers only deal damage when reeled in

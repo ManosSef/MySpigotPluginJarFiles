@@ -1,0 +1,6 @@
+BUILD 102 (2.1.1)
+
+SINCE LAST STABLE RELEASE (2.1.0)
+
+Changes
+- Internal code modifications with no visible effect besides a slight improvement on performance

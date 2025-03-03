@@ -1,0 +1,4 @@
+BUILD 102
+
+Changes
+- The projectile-damage.fish-hook config option has been removed

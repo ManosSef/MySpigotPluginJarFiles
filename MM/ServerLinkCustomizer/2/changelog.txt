@@ -1,0 +1,4 @@
+BUILD 2
+
+Fixes
+- OTHER-66 - Disabling the plugin doesn't remove all server links added by it

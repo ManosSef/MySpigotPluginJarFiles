@@ -1,0 +1,4 @@
+BUILD 101
+
+Fixes
+- OTHER-153 - The plugin sets the world border to its maximum size after the first reload

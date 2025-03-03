@@ -1,0 +1,4 @@
+BUILD 102
+
+Fixes
+- WM-7 - Non-player entities teleport to the world's center when entering an exit portal in a custom world's End

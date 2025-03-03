@@ -1,0 +1,13 @@
+BUILD 113
+
+Additions
+- Added config option "lifesteal.max-lives-to-steal", which controls the highest life count a player can have while still being able to steal lives by killing players
+- Added config option "lifesteal.min-lives-to-be-robbed", which controls the lowest life count a player can have while still being able to be robbed of lives by being killed by other players
+
+Changes
+- Config option "lifesteal" has been renamed to "lifesteal.enabled"
+
+Fixes
+- SH-15 - Setting a player's life count to its current value incorrectly claims to have hit the life limit
+- SH-16 - Using /setlives to set a player's lives to a number above the life limit incorrectly claims to succeed
+- SH-19 - The plugin gracefully accepts any value of the "lifesteal" config option

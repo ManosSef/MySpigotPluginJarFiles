@@ -1,0 +1,4 @@
+BUILD 101
+
+Fixes
+- WM-6 - Entering an exit portal causes an error
