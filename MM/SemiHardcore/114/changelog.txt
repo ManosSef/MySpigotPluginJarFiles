@@ -1,0 +1,11 @@
+BUILD 114
+
+Additions
+- Added messages "lives-message-after-lifesteal.plural", "lives-message-after-lifesteal.singular" and "lives-message-after-lifesteal.none", which appear when a player steals a life by killing a player
+- API additions:
+	- Added fields livesAfterLifestealPlural, livesAfterLifestealSingular and livesAfterLifestealNone to Messages
+	- Added method livesMessageAfterLifesteal(Player, Player) to LifeChanges
+
+Fixes
+- SH-18 - Plugin does not delete the deadPlayers.yml file when enabled
+- SH-20 - Players can steal lives while dead
