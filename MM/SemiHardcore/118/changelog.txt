@@ -1,0 +1,4 @@
+BUILD 118
+
+Fixes
+- SH-23 - The limited success message of /setlives does not appear

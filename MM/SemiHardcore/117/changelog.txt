@@ -1,0 +1,4 @@
+BUILD 117
+
+Fixes
+- SH-22 - The success messages of /setlives are backwards

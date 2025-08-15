@@ -1,0 +1,4 @@
+BUILD 119
+
+Fixes
+- SH-24 - No life changes are saved / The plugin's disabling procedure still thinks the latest versions are unsupported

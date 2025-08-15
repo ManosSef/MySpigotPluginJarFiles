@@ -1,0 +1,4 @@
+BUILD 120
+
+Fixes
+- SH-25 - The limited success message of /setlives shows the wrong number in %lives%
