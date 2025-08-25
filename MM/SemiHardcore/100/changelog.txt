@@ -1,6 +1,0 @@
-BUILD 100 (2.5.2)
-
-SINCE LAST STABLE RELEASE (2.5.1)
-
-Fixes
-- Fixed a bug where disabling the plugin would keep the hardcore hearts on all worlds even though the server is not in hardcore mode
