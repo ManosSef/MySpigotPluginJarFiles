@@ -1,6 +1,0 @@
-BUILD 103 (1.0.0)
-
-SINCE LAST BUILD (102)
-
-Fixes
-- OTHER-155 - Setting one of the options to an invalid value and starting the server causes an error
