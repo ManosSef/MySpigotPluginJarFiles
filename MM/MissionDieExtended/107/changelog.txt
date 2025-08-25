@@ -1,6 +1,0 @@
-BUILD 107 (1.0.0)
-
-SINCE LAST BUILD (106)
-
-Changes
-- Internal code modifications with no visible effect besides a slight improvement on performance
