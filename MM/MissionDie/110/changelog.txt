@@ -1,6 +1,0 @@
-BUILD 110 (1.0.1)
-
-SINCE LAST STABLE RELEASE (1.0.0)
-
-Changes
-- Internal code modifications with no visible effect besides a slight improvement on performance
