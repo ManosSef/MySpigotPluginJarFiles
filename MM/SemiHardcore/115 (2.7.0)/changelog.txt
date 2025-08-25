@@ -1,0 +1,50 @@
+BUILD 115 (2.7.0)
+
+SINCE LAST STABLE RELEASE (2.6.1)
+
+Additions
+- Added config option "lifesteal.enabled"
+	- If true, players with "lifesteal.max-lives-to-steal" or fewer lives gain 1 life if they kill a player with "lifesteal.min-lives-to-be-robbed" or more lives
+	- Defaults to false
+- Added config option "lifesteal.max-lives-to-steal"
+	- Controls the highest life count a player can have while still being able to steal lives by killing players
+	- Defaults to 2
+	- Cannot be set to a value above "lives-limit", unless that value is 0
+- Added config option "lifesteal.min-lives-to-be-robbed"
+	- Controls the lowest life count a player can have while still being able to be robbed of lives by being killed by other players
+	- Defaults to 4
+	- Cannot be set to a value above "lives-limit", unless that value is 0
+- Added messages "lives-message-after-lifesteal.plural", "lives-message-after-lifesteal.singular" and "lives-message-after-lifesteal.none", which appear when a player steals a life by killing a player
+- API additions:
+	- LifeChanges#addLifeUpToLimit(Player): runs #addLife(Player) and then #respectLivesLimit(Player)
+		- Deprecated since #respectLivesLimit(Player) also is, kept for backwards compatibility with earlier builds
+	- LifeChanges#setLivesUpToLimit(Player, int): runs #setLives(Player, int) and then #respectLivesLimit(Player)
+		- Deprecated since #respectLivesLimit(Player) also is, kept for backwards compatibility with earlier builds
+	- LifeChanges#livesMessageAfterLifesteal(Player, Player): shows the lifesteal-related messages mentioned above
+	- Added fields livesAfterLifestealPlural, livesAfterLifestealSingular and livesAfterLifestealNone to Messages
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+- Config option "lives-limit" can now be set to 0, which makes the plugin operate as if there was no limit
+- Removed the deadPlayers.yml file. Players are now considered dead if their life count is equal to zero
+- API changes:
+	- SemiHardcore#getDeadPlayersFile is now terminally deprecated
+	- LifeChanges#setDead now does nothing and is deprecated
+	- LifeChanges#setLives and LifeChanges#addLife can no longer set a player's life count above the life limit
+	- LifeChanges#respectLivesLimit is now deprecated
+	- Options is now a record, therefore there are new accessor methods, named exactly after each field
+		- The old accessor methods are now deprecated and kept for backwards compatibility
+
+Fixes
+- SH-7 - The first sentence of the update checker's message is missing a period
+- SH-8 - The message for the starting lives or life limit being 1 is not sent by the plugin's logger
+- SH-10 - Using /setlives to set a player's lives to zero does not produce a success message
+- SH-11 - Using /setlives to set a player's lives to zero calls PlayerLifeChangeEvent twice
+- SH-12 - Using /setlives to set a player's lives to a number above the life limit calls PlayerLifeChangeEvent twice
+- SH-13 - Setting a player's life count to its current value calls PlayerLifeChangeEvent
+
+SINCE LAST BUILD (114)
+
+Changes
+- Removed the message shown when config option "hardcore-hearts" is enabled in a Minecraft version below 1.15, as such versions are no longer supported

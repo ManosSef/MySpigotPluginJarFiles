@@ -1,0 +1,6 @@
+BUILD 116 (2.7.1)
+
+SINCE LAST STABLE RELEASE (2.7.0)
+
+Fixes
+- SH-21 - The plugin thinks the newest versions are unsupported

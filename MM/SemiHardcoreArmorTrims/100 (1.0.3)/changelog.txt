@@ -1,0 +1,6 @@
+BUILD 100 (1.0.3)
+
+SINCE LAST STABLE RELEASE (1.0.2)
+
+Fixes
+- OTHER-16 - Cannot choose Wayfinder or Wild armor trim from the trim selection menu
