@@ -1,0 +1,5 @@
+BUILD 122
+
+Additions
+- API additions:
+	- SemiHardcore#isUnsupportedVersion(): returns false

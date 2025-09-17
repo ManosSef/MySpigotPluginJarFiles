@@ -1,0 +1,9 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+
+Fixes
+- OTHER-76 - All arguments of /getversion tab complete player names
+- OTHER-152 - The success message of /getversion is missing a period

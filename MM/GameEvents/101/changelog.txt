@@ -1,0 +1,4 @@
+BUILD 101
+
+Fixes
+- OTHER-25 - The game event messages are missing a period

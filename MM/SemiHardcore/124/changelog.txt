@@ -1,0 +1,4 @@
+BUILD 124
+
+Changes
+- Loading the plugin while the server is already running now tells players how many lives they have and assigns lives to players that don't have any

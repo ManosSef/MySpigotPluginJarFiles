@@ -1,0 +1,5 @@
+BUILD 100
+
+Fixes
+- OTHER-1 - Disabling the plugin doesn't revert the world border back to its normal size
+- OTHER-158 - The plugin thinks the newest versions are unsupported

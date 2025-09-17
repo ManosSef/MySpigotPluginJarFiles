@@ -1,0 +1,4 @@
+BUILD 100
+
+Changes
+- Changed the API version to 1.17 since SemiHardcore doesn't support anything older than 1.17

@@ -1,0 +1,53 @@
+BUILD 100
+
+Additions
+- Added a success message to /openinv that appears when an inventory is opened
+
+Changes
+- The plugin no longer supports Minecraft versions below 1.21.2
+- Added an extra witty comment to the message sent by BoatTypeLogger
+- KillerRandomizer no longer randomizes damage dealt by plugins
+- The success message produced by /whatmetadoesithave is now green
+- The inventory argument of /openinv no longer needs to be specified in uppercase
+- Enchanting interfaces opened by /openinv can now enchant items
+- The error message produced by /openinv for an inventory type not having a GUI has been generalized due to more such types existing
+- The success message produced by /myspawnpoint is now gold
+- Removed /updatematerial due to the removal of the API method it was made to test
+- Removed /givemeporn
+- Removed /registerenchantment
+
+Fixes
+- OTHER-18 - Using /givemeaboat results in an error
+- OTHER-19 - KillerRandomizer causes an error when it chooses a living entity
+- OTHER-81 - All arguments of /crash tab complete player names
+- OTHER-82 - All arguments of /givemeporn tab complete player names
+- OTHER-83 - All arguments of /setmeonfire tab complete player names
+- OTHER-84 - All arguments of /extinguishme tab complete player names
+- OTHER-85 - All arguments of /givemebook tab complete player names
+- OTHER-86 - All arguments of /givemepdc tab complete player names
+- OTHER-87 - All arguments of /whatamiholding tab complete player names
+- OTHER-88 - All arguments of /whatmetadoesithave except the first one tab complete player names
+- OTHER-89 - All arguments of /openinv except the first one tab complete the first argument's possible values
+- OTHER-90 - All arguments of /senderinfo tab complete player names
+- OTHER-91 - All arguments of /runsenderinfoas except the first one tab complete the first argument's possible values
+- OTHER-92 - All arguments of /givemecoal except the first one tab complete the first argument's possible values
+- OTHER-93 - All arguments of /respawn tab complete player names
+- OTHER-94 - All arguments of /myspawnpoint tab complete player names
+- OTHER-95 - All arguments of /respawndragon tab complete player names
+- OTHER-96 - All arguments of /permcheck tab complete player names
+- OTHER-97 - All arguments of /registerenchantment tab complete player names
+- OTHER-98 - All arguments of /hardcoreswitch tab complete player names
+- OTHER-99 - All arguments of /getperms tab complete player names
+- OTHER-100 - All arguments of /checkcreative except the first one tab complete player names
+- OTHER-101 - All arguments of /givemeaboat tab complete player names
+- OTHER-102 - All arguments of /mybook tab complete player names
+- OTHER-103 - All arguments of /showdemo tab complete player names
+- OTHER-130 - Clicking on an empty slot in the feature menu causes an error
+- OTHER-147 - The success message of /givemepdc is missing a period
+- Fixed a typo in the message sent by EntityCombusting
+- Added missing periods to all messages sent by InventoryClickLogger
+- Added a missing article and period to the message sent by RandomSpells
+- Added a missing article to the error message produced by /openinv when no chest size has been specified
+- Added missing articles to the success messages produced by /permcheck
+- Added a missing article to the success message produced by /respawndragon
+- Fixed an error caused by /give-me-the-item-with-all-the-meta

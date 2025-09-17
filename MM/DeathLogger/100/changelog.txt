@@ -1,0 +1,10 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+
+Fixes
+- OTHER-7 - The /lagitems command has multiple tab completion issues
+- OTHER-8 - All arguments of /clearpools tab complete player names
+- OTHER-119 - /clearpools succeeds even when there are no pools to clear

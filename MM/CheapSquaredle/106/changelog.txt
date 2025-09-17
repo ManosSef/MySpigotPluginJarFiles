@@ -1,0 +1,7 @@
+BUILD 106
+
+Fixes
+- CS-2 - The BWOTD hides more letters before it's found than it does in Squaredle
+- CS-4 - Entering a guess that cannot be spelled in the grid misleadingly shows "Not in list"
+- CS-7 - Entering a banned guess that cannot be spelled in the grid triggers the excluded word warning and popup
+- CS-14 - "/squaredle color" succeeds even when the color doesn't change

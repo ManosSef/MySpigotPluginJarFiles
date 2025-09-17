@@ -1,0 +1,9 @@
+BUILD 101 (1.0.4)
+
+SINCE LAST STABLE RELEASE (1.0.3)
+
+Changes
+- Changed the API version to 1.17 since SemiHardcore doesn't support anything older than 1.17
+
+Fixes
+- OTHER-156 - The plugin thinks the newest versions are unsupported

@@ -1,0 +1,4 @@
+BUILD 101
+
+Fixes
+- Made the totem of dying's hidden enchantment invisible

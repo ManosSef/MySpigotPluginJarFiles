@@ -1,0 +1,15 @@
+BUILD 102 (1.0.1)
+
+SINCE LAST STABLE RELEASE (1.0.0)
+
+Changes
+- The plugin now remembers the world border size of each world and resets it back to that value for each world when disabled
+
+Fixes
+- OTHER-1 - Disabling the plugin doesn't revert the world border back to its normal size
+- OTHER-158 - The plugin thinks the newest versions are unsupported
+
+SINCE LAST BUILD (101)
+
+Changes
+- The plugin's SpigotMC page is now linked in plugin.yml

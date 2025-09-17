@@ -1,0 +1,13 @@
+BUILD 125 (2.7.3)
+
+SINCE LAST STABLE RELEASE (2.7.2)
+
+Additions
+- API additions:
+	- SemiHardcore#isUnsupportedVersion(): returns false
+
+Changes
+- Loading the plugin while the server is already running now tells players how many lives they have and assigns lives to players that don't have any
+
+Fixes
+- Fixed an error when a player joins a server with the plugin freshly installed

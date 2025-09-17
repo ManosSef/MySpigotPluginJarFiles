@@ -1,0 +1,4 @@
+BUILD 102
+
+Fixes
+- Fixed the usage strings of /newhunter displaying as an array

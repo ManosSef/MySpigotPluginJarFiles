@@ -1,0 +1,4 @@
+BUILD 101
+
+Fixes
+- Fixed an error when removing hunters

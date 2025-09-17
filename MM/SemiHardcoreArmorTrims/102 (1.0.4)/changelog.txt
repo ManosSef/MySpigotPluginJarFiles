@@ -1,0 +1,13 @@
+BUILD 102 (1.0.4)
+
+SINCE LAST STABLE RELEASE (1.0.3)
+
+Additions
+- Added a new message: trim-unchanged
+	- Appears when the player tries to change their armor trim to the one they currently have using /changetrim
+	- Set to "&cNothing changed; the specified armor trim is your current one." by default
+
+Fixes
+- OTHER-17 - The initial armor trim selection menu sometimes appears again after selecting a trim
+- OTHER-150 - /changetrim succeeds even when the trim doesn't change
+- OTHER-157 - The plugin thinks the newest versions are unsupported

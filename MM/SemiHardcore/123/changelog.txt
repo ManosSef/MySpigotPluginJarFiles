@@ -1,0 +1,4 @@
+BUILD 123
+
+Fixes
+- Fixed an error when a player joins a server with the plugin freshly installed

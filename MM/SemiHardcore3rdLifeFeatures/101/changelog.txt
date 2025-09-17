@@ -1,0 +1,4 @@
+BUILD 101
+
+Changes
+- The plugin now remembers the world border size of each world and resets it back to that value for each world when disabled

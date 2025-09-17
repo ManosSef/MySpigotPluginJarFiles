@@ -1,0 +1,15 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.17
+	- Even though 1.17(.1) can be run with Java 16, the plugin only supports Java 17 or above
+- Compasses given by the /newhunter command now have a persistent value and custom lore to distinguish them from other compasses
+	- Using compasses without that persistent value no longer causes them to point to the nearest non-hunter
+- Added a proper description and usage strings to /newhunter
+- The error messages of /newhunter are now more descriptive
+
+Fixes
+- OTHER-39 - All arguments of /newhunter tab complete player names
+- OTHER-40 - The /newhunter command can add and remove hunters more than once
+- OTHER-41 - The /newhunter command cannot give a player a compass if their inventory is full
+- OTHER-42 - The /newhunter command cannot remove compasses from a player's inventory if they are in a stack of more than 1
