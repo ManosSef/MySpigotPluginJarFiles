@@ -1,0 +1,7 @@
+BUILD 100
+
+Changes
+- Due to internal setup changes, the plugin no longer supports Minecraft versions below 1.18
+
+Fixes
+- Fixed the /startchallenge command tab completing player names for all arguments

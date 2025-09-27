@@ -1,0 +1,5 @@
+BUILD 4
+
+Fixes
+- The separate error message that appears when running /trim while holding nothing now actually shows
+- Added a missing article in the success message of /trim
