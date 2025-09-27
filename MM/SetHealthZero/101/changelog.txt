@@ -1,4 +1,0 @@
-BUILD 101
-
-Fixes
-- OTHER-67 - All arguments of /sethealthzero tab complete player names
