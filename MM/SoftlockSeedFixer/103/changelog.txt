@@ -1,7 +1,0 @@
-BUILD 103
-
-Changes
-- Removed the debug message added in build 101
-
-Fixes
-- OTHER-109 - Softlock seeds are no longer fixed by the plugin

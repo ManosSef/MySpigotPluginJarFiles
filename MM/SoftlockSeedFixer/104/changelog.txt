@@ -1,5 +1,0 @@
-BUILD 104
-
-Changes
-- The plugin now once again supports Minecraft 1.17 and 1.17.1
-	- Even though these versions can be run with Java 16, the plugin only supports Java 17 or above

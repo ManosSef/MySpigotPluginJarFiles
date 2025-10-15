@@ -1,4 +1,0 @@
-BUILD 101
-
-Additions
-- Added a debug message to find the highest block at a position if there are no blocks there

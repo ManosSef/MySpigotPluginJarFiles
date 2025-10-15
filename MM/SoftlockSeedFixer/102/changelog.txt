@@ -1,4 +1,0 @@
-BUILD 102
-
-Fixes
-- OTHER-110 - Using the plugin causes an error
