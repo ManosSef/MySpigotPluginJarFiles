@@ -1,0 +1,4 @@
+BUILD 2
+
+Additions
+- TypeChecks#isUUID(String): returns true if the input can be converted into a UUID and false otherwise

@@ -1,0 +1,5 @@
+BUILD 2
+
+Changes
+- The target Alexandria version is now 1.0.0-build8
+- /playertabs now also tab completes players in the third argument

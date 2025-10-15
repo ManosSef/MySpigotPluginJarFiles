@@ -1,0 +1,9 @@
+BUILD 100
+
+Changes
+- The plugin no longer depends on WrappersAPI
+- The plugin no longer supports Minecraft versions before 1.21.4
+- Removed the custom poison enchantment
+- Cave spiders now spawn holding golden swords with Sharpness II
+- Bogged now spawn holding bows with Punch II
+- Creakings now spawn holding wooden axes with Sharpness I

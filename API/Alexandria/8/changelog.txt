@@ -1,0 +1,25 @@
+BUILD 8
+
+Additions
+- TabCompletions#argumentAtIndex(int, List<String>): returns a tab completer that tab completes the given list, removing strings that don't start with the typed argument, at the given index
+	- Like #first(List<String>), but for the argument at the given index instead of the first argument
+	- Using 0 as the index works exactly like #first(List<String>)
+- TabCompletions#argumentAtIndex(int, Supplier<List<String>>): like #argumentAtIndex(int, List<String>) but with a supplier as the first parameter
+	- Like #first(Supplier<List<String>>), but for the argument at the given index instead of the first argument
+	- Using 0 as the index works exactly like #first(Supplier<List<String>>)
+- TabCompletions#everywhere(List<String>): returns a tab completer that tab completes the given list, removing strings that don't start with the typed argument, for all arguments
+- TabCompletions#everywhere(Supplier<List<String>>): like #everywhere(List<String>) but with a supplier as the first parameter
+- TabCompletions#literalsAtFirst(String...): returns a tab completer that tab completes the given array, removing strings that don't start with the typed argument, for the first argument
+	- Exactly like the previous functionality of #literals(String...)
+- TabCompletions#literalsAtIndex(int, String...): returns a tab completer that tab completes the given array, removing strings that don't start with the typed argument, at the given index
+	- Like #literalsAtFirst(String...), but for the argument at the given index instead of the first argument
+	- Using 0 as the index works exactly like #literalsAtFirst(List<String>)
+- TabCompletions#playersAtFirst(): returns a tab completer that tab completes the names of all online players, removing strings that don't start with the typed argument, for the first argument
+	- Exactly like the previous functionality of #players()
+- TabCompletions#playersAtIndex(int): returns a tab completer that tab completes the names of all online players, removing strings that don't start with the typed argument, at the given index
+	- Like #playersAtFirst(), but for the argument at the given index instead of the first argument
+	- Using 0 as the index works exactly like #playersAtFirst()
+
+Changes
+- TabCompletions#literals(String...) now tab completes the given array for all arguments, instead of just the first one
+- TabCompletions#players() now tab completes the names of all online players for all arguments, instead of just the first one

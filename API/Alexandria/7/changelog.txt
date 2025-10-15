@@ -1,0 +1,4 @@
+BUILD 7
+
+Additions
+- TabCompletions#first(Supplier<List<String>>): same as #first(List<String>) but with a supplier as a parameter, so the resulting tab completed arguments can dynamically change

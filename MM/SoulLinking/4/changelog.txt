@@ -1,0 +1,4 @@
+BUILD 4
+
+Fixes
+- OTHER-182 - The third argument of /soullinking tab completes player names if the first argument is "unlink" instead of "link"

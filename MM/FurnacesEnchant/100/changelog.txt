@@ -1,0 +1,5 @@
+BUILD 100
+
+Changes
+- The plugin no longer supports Minecraft versions before 1.21.9
+- Copper tools and armor pieces no longer turn into nuggets when smelted

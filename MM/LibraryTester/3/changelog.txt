@@ -1,0 +1,7 @@
+BUILD 3
+
+Changes
+- The target Alexandria version is now 1.0.0-build9
+
+Fixes
+- The third argument of /playertabs now actually tab completes player names

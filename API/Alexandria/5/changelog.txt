@@ -1,0 +1,10 @@
+BUILD 5
+
+Additions
+- TabCompletions#players(): returns a tab completer that tab completes player names
+
+Changes
+- Removed TabCompletions.PLAYERS in favor of TabCompletions#players
+
+Fixes
+- AL-1 - TabCompletions.PLAYERS does not tab complete anything

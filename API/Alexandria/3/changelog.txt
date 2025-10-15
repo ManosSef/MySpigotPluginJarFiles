@@ -1,0 +1,4 @@
+BUILD 3
+
+Fixes
+- Fixed an error when calling the TypeChecks#isUUID method with a string that cannot be converted to a UUID

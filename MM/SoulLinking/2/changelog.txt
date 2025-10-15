@@ -1,0 +1,5 @@
+BUILD 2
+
+Fixes
+- The plugin no longer breaks if there is no pairs.yml file beforehand
+- pairs.yml is no longer wiped when the plugin is run with a fake Alexandria

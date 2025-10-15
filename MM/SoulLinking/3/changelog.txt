@@ -1,0 +1,10 @@
+BUILD 3
+
+Changes
+- The target Alexandria version is now 1.0.0-build5
+
+Fixes
+- OTHER-178 - The success message of '/soullinking start' when a player is not linked contains the string representation of the player's class instead of their name
+- OTHER-179 - Players can be linked with themselves
+- OTHER-180 - Pairs are not saved correctly, causing errors
+- OTHER-181 - '/soullinking start' always succeeds when no players are online

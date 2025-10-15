@@ -1,0 +1,4 @@
+BUILD 4
+
+Fixes
+- TabCompletions#removeNotStartingWith now removes arguments not starting with the typed argument instead of ones starting with it

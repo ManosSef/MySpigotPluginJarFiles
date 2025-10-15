@@ -1,0 +1,4 @@
+BUILD 2
+
+Changes
+- Changed main class in plugin.yml to have a dollar sign in front of the inner class name instead of a period

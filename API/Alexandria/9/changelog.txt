@@ -1,0 +1,6 @@
+BUILD 9
+
+Additions
+- TabCompletions#none(): returns TabCompletions.NONE
+- TabCompletions#completers(TabCompleter...): returns a tab completer that, for the index of the argument being tab completed, tab completes the arguments that the tab completer at that index of the given array would tab complete
+	- Like #arguments(TabCompleter...) but it passes the entire args array to the chosen tab completer instead of just the last string
