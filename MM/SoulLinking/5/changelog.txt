@@ -1,0 +1,14 @@
+BUILD 5
+
+Changes
+- The target Alexandria version is now 1.0.0-build10
+- The plugin now makes the server download the Kotlin library, instead of it being included in the jar file
+
+Fixes
+- OTHER-183 - Linked players' health sometimes syncs one tick too early
+- OTHER-184 - Killing a linked player doesn't kill their soulmate
+- OTHER-185 - Absorption hearts aren't synced between linked players
+- OTHER-186 - Players can cause their soulmate's health to sync when said soulmate is dead
+- OTHER-187 - Links cannot be broken with /soullinking
+- OTHER-188 - Linked players' health does not sync when one respawns
+- OTHER-189 - Linked players' health doesn't sync when one joins

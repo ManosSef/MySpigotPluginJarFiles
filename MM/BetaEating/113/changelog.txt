@@ -1,0 +1,7 @@
+BUILD 113
+
+Changes
+- The plugin no longer supports Minecraft versions before 1.21.4
+
+Fixes
+- OTHER-170 - Clicking on, clicking with, picking up, or preparing to craft a food item causes an error

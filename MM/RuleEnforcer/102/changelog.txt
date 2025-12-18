@@ -1,0 +1,4 @@
+BUILD 102
+
+Fixes
+- The plugin is now disabled when options in the config.yml file are invalid instead of valid

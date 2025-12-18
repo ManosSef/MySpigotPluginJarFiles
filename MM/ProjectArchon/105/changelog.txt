@@ -1,0 +1,4 @@
+BUILD 105
+
+Fixes
+- The world border size is no longer reset every time the plugin is enabled

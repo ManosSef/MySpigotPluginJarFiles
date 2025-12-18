@@ -1,0 +1,4 @@
+BUILD 13
+
+Additions
+- ReloadConfigCommand#setupCommand(PluginCommand): sets the given command's executor and tab completer to the ones returned by #executor(Plugin) and #tabCompleter()

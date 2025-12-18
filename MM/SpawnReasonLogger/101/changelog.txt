@@ -1,0 +1,17 @@
+BUILD 101
+
+Additions
+- Added the config.yml option "enabled"
+	- When false, no spawn reason messages are sent
+	- The default value is true
+
+Changes
+- The plugin now depends on Alexandria, with target version 1.0.0-build11
+- The values of config.yml options are now validated when the plugin is enabled (OTHER-243)
+	- If any value is of the wrong type for its option, the plugin disables itself
+- Running /spawnreasonlogger with no arguments now toggles the config.yml option "enabled"
+- Spawn reason message colors are now also different based on the entity type (OTHER-244)
+- Made the failure message shown when running /spawnreasonlogger with an invalid first argument more descriptive
+
+Fixes
+- Running /spawnreasonlogger with only one argument now shows the invalid argument message if that argument is invalid

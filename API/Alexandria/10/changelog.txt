@@ -1,0 +1,8 @@
+BUILD 10
+
+Additions
+- TabCompletions#conditional(TabCompleter, Predicate<String[]>): returns a tab completer that uses the given completer if the given predicate on the command's arguments passes, and completes nothing otherwise
+- TabCompletions#conditionalOrElse(TabCompleter, Predicate<String[]>, TabCompleter): returns a tab completer that uses the first given completer if the given predicate on the command's arguments passes, and the second given completer otherwise
+
+Fixes
+- Fixed an issue where tab completions produced by TabCompletions#everywhere(List<String>), TabCompletions#first(List<String), and by extension TabCompletions#literals(String...) and TabCompletions#literalsAtFirst(String...), would stop working after the first time they were tab completed

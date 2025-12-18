@@ -1,0 +1,19 @@
+BUILD 101
+
+Additions
+- Added some newly unsupported plugins as plugin features:
+	- [TEMP] NoDmgToMe (OTHER-171)
+		- Prevents players whose name contains "ManosSef" from taking damage
+	- [TEMP] PickupMobNaming (OTHER-175)
+		- Automatically names spawned mobs that can pick up items "Can pick up loot" and makes their name always visible
+- Added the following commands from some newly unsupported plugins:
+	- /eject from [TEMP] PassengerEjecter (OTHER-172)
+		- Ejects all passengers from the player
+	- /sethealthzero from [TEMP] SetHealthZero (OTHER-173)
+		- Sets the player's health to zero
+- Added /getconfigvalue
+	- Gets the value of a config key in a plugin
+	- Syntax: /getconfigvalue <plugin> <key>
+
+Fixes
+- Fixed an error caused by BoatTypeLogger when entering a pale oak boat

@@ -1,0 +1,5 @@
+BUILD 2
+
+Fixes
+- Players' death messages are no longer duplicated in the chat
+- Death messages are now shown 1 tick after a mob's death

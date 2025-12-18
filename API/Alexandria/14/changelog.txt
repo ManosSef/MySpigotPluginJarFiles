@@ -1,0 +1,5 @@
+BUILD 14
+
+Additions
+- ReloadConfigCommand#executor(Plugin, Consumer<Plugin>): same as #executor(Plugin) except it runs the given function on the plugin instead of its reloadConfig() method
+- ReloadConfigCommand#setupCommand(PluginCommand, Consumer<Plugin>): same as #setupCommand(PluginCommand) except it gives the command the executor from #executor(Plugin, Consumer<Plugin>)

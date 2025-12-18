@@ -1,0 +1,10 @@
+BUILD 101
+
+Changes
+- The plugin now depends on Alexandria, with target version 1.0.0-build12
+- Options in the config.yml file are now validated
+
+Fixes
+- OTHER-234 - The plugin does not create a config.yml file
+- The /ruleenforcer command now actually reloads the plugin's options from the config.yml file
+- Messages sent by the /ruleenforcer command are now green when successful and red otherwise

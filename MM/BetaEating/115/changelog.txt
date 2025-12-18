@@ -1,0 +1,5 @@
+BUILD 115
+
+Fixes
+- Fixed food items not being instantly consumable
+- Fixed shift-clicking stacks of food items resulting in loss of food items

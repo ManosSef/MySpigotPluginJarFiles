@@ -1,0 +1,4 @@
+BUILD 3
+
+Fixes
+- Players now get tasks when tasks are rolled

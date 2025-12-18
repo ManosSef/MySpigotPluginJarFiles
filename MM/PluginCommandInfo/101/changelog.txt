@@ -1,0 +1,12 @@
+BUILD 101
+
+Additions
+- Added a new syntax to /plugincommandinfo: /plugincommandinfo <plugin>
+	- Shows only info about the commands in the specified plugin
+
+Changes
+- The plugin now depends on Alexandria, with target version 1.0.0-build12
+
+Fixes
+- OTHER-237 - The output of /plugincommandinfo includes disabled plugins
+- Fixed the console not showing the entire output of /plugincommandinfo when the server has many plugins

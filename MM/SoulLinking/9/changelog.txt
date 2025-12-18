@@ -1,0 +1,4 @@
+BUILD 9
+
+Fixes
+- Fixed pairs' health bars syncing when damage is taken during invulnerability ticks

@@ -1,0 +1,4 @@
+BUILD 117
+
+Fixes
+- Fixed stacked food items being able to be swapped into the player's off hand slot while keeping them stacked

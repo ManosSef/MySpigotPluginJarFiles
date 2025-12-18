@@ -1,0 +1,4 @@
+BUILD 8
+
+Fixes
+- Fixed the server crashing when a linked player dies

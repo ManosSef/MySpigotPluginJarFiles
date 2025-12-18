@@ -1,0 +1,67 @@
+BUILD 12
+
+Additions
+- me.manossef.api.alexandria.commands.ReloadConfigCommand: contains the implementation for a command that takes in "reload" as the first argument and reloads its plugin's config.yml
+	- ReloadConfigCommand#executor(Plugin): returns a CommandExecutor for the above command implementation, using the given plugin's config.yml
+	- ReloadConfigCommand#tabCompleter(): returns a TabCompleter that tab completes "reload" for the first argument
+- me.manossef.api.alexandria.config.ConfigurationRecord: an interface intended to be implemented by records used for storing plugins' settings
+	- Contains the methods #logOptions(Logger) and #saveToFile(FileConfiguration)
+- All methods in me.manossef.api.alexandria.config.OptionValidations have been given variants that start with "recheck" instead of "check" and don't disable the plugin when an option is invalid (but still send the message), which are all meant to be used on a config reload instead of the initial load. These are all the new methods:
+	- OptionValidations#recheckRequired(String, Plugin):
+	- OptionValidations#recheckRequired(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckBooleanOption(String, Plugin)
+	- OptionValidations#recheckBooleanOption(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckDebugOption(String, Plugin)
+	- OptionValidations#recheckDebugOption(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckIntOption(String, Plugin)
+	- OptionValidations#recheckIntOption(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckIntOption(String, int, Plugin)
+	- OptionValidations#recheckIntOption(String, int, Plugin, FileConfiguration)
+	- OptionValidations#recheckIntOption(String, int, int, Plugin)
+	- OptionValidations#recheckIntOption(String, int, int, Plugin, FileConfiguration)
+	- OptionValidations#recheckMinMaxIntOption(String, Plugin)
+	- OptionValidations#recheckMinMaxIntOption(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckMinMaxIntOption(String, int, Plugin)
+	- OptionValidations#recheckMinMaxIntOption(String, int, Plugin, FileConfiguration)
+	- OptionValidations#recheckMinMaxIntOption(String, int, int, Plugin)
+	- OptionValidations#recheckMinMaxIntOption(String, int, int, Plugin, FileConfiguration)
+	- OptionValidations#recheckDoubleOption(String, Plugin)
+	- OptionValidations#recheckDoubleOption(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckDoubleOption(String, double, Plugin)
+	- OptionValidations#recheckDoubleOption(String, double, Plugin, FileConfiguration)
+	- OptionValidations#recheckDoubleOption(String, double, double, Plugin)
+	- OptionValidations#recheckDoubleOption(String, double, double, Plugin, FileConfiguration)
+	- OptionValidations#recheckMinMaxDoubleOption(String, Plugin)
+	- OptionValidations#recheckMinMaxDoubleOption(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckMinMaxDoubleOption(String, double, Plugin)
+	- OptionValidations#recheckMinMaxDoubleOption(String, double, Plugin, FileConfiguration)
+	- OptionValidations#recheckMinMaxDoubleOption(String, double, double, Plugin)
+	- OptionValidations#recheckMinMaxDoubleOption(String, double, double, Plugin, FileConfiguration)
+	- OptionValidations#recheckStringOption(String, Plugin)
+	- OptionValidations#recheckStringOption(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckEnumOption(String, Class<T>, Plugin)
+	- OptionValidations#recheckEnumOption(String, Class<T>, Plugin, FileConfiguration)
+	- OptionValidations#recheckListOption(String, Plugin)
+	- OptionValidations#recheckListOption(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckBooleanList(String, Plugin)
+	- OptionValidations#recheckBooleanList(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckIntList(String, Plugin)
+	- OptionValidations#recheckIntList(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckIntList(String, int, Plugin)
+	- OptionValidations#recheckIntList(String, int, Plugin, FileConfiguration)
+	- OptionValidations#recheckIntList(String, int, int, Plugin)
+	- OptionValidations#recheckIntList(String, int, int, Plugin, FileConfiguration)
+	- OptionValidations#recheckDoubleList(String, Plugin)
+	- OptionValidations#recheckDoubleList(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckDoubleList(String, double, Plugin)
+	- OptionValidations#recheckDoubleList(String, double, Plugin, FileConfiguration)
+	- OptionValidations#recheckDoubleList(String, double, double, Plugin)
+	- OptionValidations#recheckDoubleList(String, double, double, Plugin, FileConfiguration)
+	- OptionValidations#recheckStringList(String, Plugin)
+	- OptionValidations#recheckStringList(String, Plugin, FileConfiguration)
+	- OptionValidations#recheckEnumList(String, Class<T>, Plugin)
+	- OptionValidations#recheckEnumList(String, Class<T>, Plugin, FileConfiguration)
+- Util#logSevere(String, Plugin, boolean): logs the given string to the given plugin's logger, with "This plugin is being disabled." appended to it if the given boolean is true, which also disables the given plugin
+
+Changes
+- The plugin now supports all Minecraft versions since 1.8, provided that they're run with Java 11 and up

@@ -1,0 +1,4 @@
+BUILD 12
+
+Changes
+- Soulmate deaths now happen immediately after a player's normal death instead of before

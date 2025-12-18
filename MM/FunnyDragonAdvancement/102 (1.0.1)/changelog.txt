@@ -1,0 +1,7 @@
+BUILD 102 (1.0.1)
+
+SINCE LAST STABLE RELEASE (1.0.0)
+
+Changes
+- Ender dragons killing players now have the advancement saved onto their persistent data instead of the config.yml file
+- The plugin no longer uses the config.yml file

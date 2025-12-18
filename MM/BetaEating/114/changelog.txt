@@ -1,0 +1,4 @@
+BUILD 114
+
+Fixes
+- Fixed an error when clicking on an empty inventory slot

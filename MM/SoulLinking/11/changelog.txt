@@ -1,0 +1,4 @@
+BUILD 11
+
+Fixes
+- Fixed a death loop caused by a linked player's death

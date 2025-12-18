@@ -1,0 +1,67 @@
+BUILD 11
+
+Additions
+- me.manossef.api.alexandria.config.OptionValidations: currently contains the following methods:
+	- OptionValidations#checkRequired(String, Plugin): returns whether the given plugin's config contains a value at the given path and disables the plugin with a message if not
+	- OptionValidations#checkRequired(String, Plugin, FileConfiguration): returns whether the given config contains a value at the given path and disables the given plugin with a message if not
+	- OptionValidations#checkBooleanOption(String, Plugin): returns whether the value of the given plugin's config at the given path is a boolean and disables the plugin with a message if not
+	- OptionValidations#checkBooleanOption(String, Plugin, FileConfiguration): returns whether the value of the given plugin's config at the given path is a boolean and disables the plugin with a message if not
+	- OptionValidations#checkDebugOption(String, Plugin): returns true
+	- OptionValidations#checkDebugOption(String, Plugin, FileConfiguration): returns true
+	- OptionValidations#checkIntOption(String, Plugin): returns whether the value of the given plugin's config at the given path is an integer and disables the plugin with a message if not
+	- OptionValidations#checkIntOption(String, Plugin, FileConfiguration): returns whether the value of the given config at the given path is an integer and disables the given plugin with a message if not
+	- OptionValidations#checkIntOption(String, int, Plugin): returns whether the value of the given plugin's config at the given path is an integer greater than or equal to the given integer and disables the plugin with a message if not
+	- OptionValidations#checkIntOption(String, int, Plugin, FileConfiguration): returns whether the value of the given config at the given path is an integer greater than or equal to the given integer and disables the given plugin with a message if not
+	- OptionValidations#checkIntOption(String, int, int, Plugin): returns whether the value of the given plugin's config at the given path is an integer between the given integers (inclusive) and disables the plugin with a message if not
+	- OptionValidations#checkIntOption(String, int, int, Plugin, FileConfiguration): returns whether the value of the given config at the given path is an integer between the given integers (inclusive) and disables the given plugin with a message if not
+	- OptionValidations#checkMinMaxIntOption(String, Plugin): returns whether the values of the given plugin's config at the given path with ".min" and ".max" appended are integers and disables the plugin with a message if not
+	- OptionValidations#checkMinMaxIntOption(String, Plugin, FileConfiguration): returns whether the values of the given config at the given path with ".min" and ".max" appended are integers and disables the given plugin with a message if not
+	- OptionValidations#checkMinMaxIntOption(String, int, Plugin): returns whether the values of the given plugin's config at the given path with ".min" and ".max" appended are integers greater than or equal to the given integer and disables the plugin with a message if not
+	- OptionValidations#checkMinMaxIntOption(String, int, Plugin, FileConfiguration): returns whether the values of the given config at the given path with ".min" and ".max" appended are integers greater than or equal to the given integer and disables the given plugin with a message if not
+	- OptionValidations#checkMinMaxIntOption(String, int, int, Plugin): returns whether the values of the given plugin's config at the given path with ".min" and ".max" appended are integers between the given integers (inclusive) and disables the plugin with a message if not
+	- OptionValidations#checkMinMaxIntOption(String, int, int, Plugin, FileConfiguration): returns whether the values of the given config at the given path with ".min" and ".max" appended are integers between the given integers (inclusive) and disables the given plugin with a message if not
+	- OptionValidations#checkDoubleOption(String, Plugin): returns whether the value of the given plugin's config at the given path is a double and disables the plugin with a message if not
+	- OptionValidations#checkDoubleOption(String, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a double and disables the given plugin with a message if not
+	- OptionValidations#checkDoubleOption(String, double, Plugin): returns whether the value of the given plugin's config at the given path is a double greater than or equal to the given double and disables the plugin with a message if not
+	- OptionValidations#checkDoubleOption(String, double, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a double greater than or equal to the given double and disables the given plugin with a message if not
+	- OptionValidations#checkDoubleOption(String, double, double, Plugin): returns whether the value of the given plugin's config at the given path is a double between the given doubles (inclusive) and disables the plugin with a message if not
+	- OptionValidations#checkDoubleOption(String, double, double, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a double between the given doubles (inclusive) and disables the given plugin with a message if not
+	- OptionValidations#checkMinMaxDoubleOption(String, Plugin): returns whether the values of the given plugin's config at the given path with ".min" and ".max" appended are doubles and disables the plugin with a message if not
+	- OptionValidations#checkMinMaxDoubleOption(String, Plugin, FileConfiguration): returns whether the values of the given config at the given path with ".min" and ".max" appended are doubles and disables the given plugin with a message if not
+	- OptionValidations#checkMinMaxDoubleOption(String, double, Plugin): returns whether the values of the given plugin's config at the given path with ".min" and ".max" appended are doubles greater than or equal to the given double and disables the plugin with a message if not
+	- OptionValidations#checkMinMaxDoubleOption(String, double, Plugin, FileConfiguration): returns whether the values of the given config at the given path with ".min" and ".max" appended are doubles greater than or equal to the given double and disables the given plugin with a message if not
+	- OptionValidations#checkMinMaxDoubleOption(String, double, double, Plugin): returns whether the values of the given plugin's config at the given path with ".min" and ".max" appended are doubles between the given doubles (inclusive) and disables the plugin with a message if not
+	- OptionValidations#checkMinMaxDoubleOption(String, double, double, Plugin, FileConfiguration): returns whether the values of the given config at the given path with ".min" and ".max" appended are doubles between the given doubles (inclusive) and disables the given plugin with a message if not
+	- OptionValidations#checkStringOption(String, Plugin): returns whether the value of the given plugin's config at the given path is a string and disables the plugin with a message if not
+	- OptionValidations#checkStringOption(String, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a string and disables the given plugin with a message if not
+	- OptionValidations#checkEnumOption(String, Class<T>, Plugin): returns whether the value of the given plugin's config at the given path is an enum constant in the given enum class and disables the plugin with a message if not
+	- OptionValidations#checkEnumOption(String, Class<T>, Plugin, FileConfiguration): returns whether the value of the given config at the given path is an enum constant in the given enum class and disables the given plugin with a message if not
+	- OptionValidations#checkListOption(String, Plugin): returns whether the value of the given plugin's config at the given path is a list and disables the plugin with a message if not
+	- OptionValidations#checkListOption(String, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list and disables the given plugin with a message if not
+	- OptionValidations#checkBooleanList(String, Plugin): returns whether the value of the given plugin's config at the given path is a list of booleans and disables the plugin with a message if not
+	- OptionValidations#checkBooleanList(String, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of booleans and disables the given plugin with a message if not
+	- OptionValidations#checkIntList(String, Plugin): returns whether the value of the given plugin's config at the given path is a list of integers and disables the plugin with a message if not
+	- OptionValidations#checkIntList(String, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of integers and disables the given plugin with a message if not
+	- OptionValidations#checkIntList(String, int, Plugin): returns whether the value of the given plugin's config at the given path is a list of integers greater than or equal to the given integer and disables the plugin with a message if not
+	- OptionValidations#checkIntList(String, int, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of integers greater than or equal to the given integer and disables the given plugin with a message if not
+	- OptionValidations#checkIntList(String, int, int, Plugin): returns whether the value of the given plugin's config at the given path is a list of integers between the given integers (inclusive) and disables the plugin with a message if not
+	- OptionValidations#checkIntList(String, int, int, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of integers between the given integers (inclusive) and disables the given plugin with a message if not
+	- OptionValidations#checkDoubleList(String, Plugin): returns whether the value of the given plugin's config at the given path is a list of doubles and disables the plugin with a message if not
+	- OptionValidations#checkDoubleList(String, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of doubles and disables the given plugin with a message if not
+	- OptionValidations#checkDoubleList(String, double, Plugin): returns whether the value of the given plugin's config at the given path is a list of doubles greater than or equal to the given double and disables the plugin with a message if not
+	- OptionValidations#checkDoubleList(String, double, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of doubles greater than or equal to the given double and disables the given plugin with a message if not
+	- OptionValidations#checkDoubleList(String, double, double, Plugin): returns whether the value of the given plugin's config at the given path is a list of doubles between the given doubles (inclusive) and disables the plugin with a message if not
+	- OptionValidations#checkDoubleList(String, double, double, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of doubles between the given doubles (inclusive) and disables the given plugin with a message if not
+	- OptionValidations#checkStringList(String, Plugin): returns whether the value of the given plugin's config at the given path is a list of strings and disables the plugin with a message if not
+	- OptionValidations#checkStringList(String, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of strings and disables the given plugin with a message if not
+	- OptionValidations#checkEnumList(String, Class<T>, Plugin): returns whether the value of the given plugin's config at the given path is a list of enum constants in the given enum class and disables the plugin with a message if not
+	- OptionValidations#checkEnumList(String, Class<T>, Plugin, FileConfiguration): returns whether the value of the given config at the given path is a list of enum constants in the given enum class and disables the given plugin with a message if not
+- me.manossef.api.alexandria.Util: currently contains the following method:
+	- Util#disablePluginWithMessage(String, Plugin): logs the given string with a SEVERE logging level from the given plugin's logger, then disables said plugin
+- TypeChecks#isEnum(String, Class<T>): returns true if the given string is an enum constant in the given enum class, and false otherwise
+
+Changes
+- SpigotMCUpdateChecker now extends SimpleUpdateChecker, since they were already very similar
+	- SpigotMCUpdateChecker no longer overrides #checkForUpdates() and #getPluginName()
+- YamlFile#saveDefaultConfig() is no longer run when a YamlFile object is constructed, so that plugins can choose whether to save the default file when creating a new one
+- TabCompletions methods that take objects as parameters now immediately throw NullPointerException once if called with null arguments instead of throwing errors when tab completing arguments

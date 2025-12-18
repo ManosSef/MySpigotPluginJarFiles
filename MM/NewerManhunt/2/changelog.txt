@@ -1,0 +1,7 @@
+BUILD 2
+
+Changes
+- The target Alexandria version is now 1.0.0-build10
+
+Fixes
+- Players joining after the plugin has been enabled now correctly gain runners' attribute values

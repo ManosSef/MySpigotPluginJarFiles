@@ -1,0 +1,7 @@
+BUILD 103
+
+Changes
+- The game event messages now display the game events in lowercase
+
+Fixes
+- Fixed the plugin's listeners still reading from the config.yml file instead of checking the internally loaded options

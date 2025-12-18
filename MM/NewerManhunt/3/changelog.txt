@@ -1,0 +1,4 @@
+BUILD 3
+
+Fixes
+- The plugin now actually declares Alexandria as a dependency

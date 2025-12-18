@@ -1,0 +1,4 @@
+BUILD 103
+
+Changes
+- Changes to the config.yml file are no longer overwritten when the plugin is disabled

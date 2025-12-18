@@ -1,0 +1,5 @@
+BUILD 103
+
+Fixes
+- Fixed an error when multiple options in the config.yml file are invalid
+- When "blocked-entity-types" or "blocked-spawn-reasons" in the config.yml file is empty, it is now logged with "None" after the colon instead of nothing

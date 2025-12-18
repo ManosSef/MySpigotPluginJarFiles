@@ -1,0 +1,7 @@
+BUILD 103
+
+Changes
+- The target Alexandria version is now 1.0.0-build14
+
+Fixes
+- Fixed the plugin validating and logging options twice when the plugin is enabled

@@ -1,0 +1,4 @@
+BUILD 116
+
+Fixes
+- Fixed shift-clicking on a single food item being cancelled

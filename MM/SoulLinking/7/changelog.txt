@@ -1,0 +1,5 @@
+BUILD 7
+
+Fixes
+- OTHER-220 - Killing a linked player doesn't kill their soulmate when doImmediateRespawn is true
+- Soulmates no longer die twice when their linked player dies

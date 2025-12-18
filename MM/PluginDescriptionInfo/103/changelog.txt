@@ -1,0 +1,4 @@
+BUILD 103
+
+Fixes
+- Specifying a disabled plugin as the first argument for /plugindescriptioninfo no longer shows its info

@@ -1,0 +1,10 @@
+BUILD 5
+
+Fixes
+- Fixed an error when pressing one of the Secret Keeper's buttons or placing a block
+- Fixed previously unseen players' health not being set to 30 hearts, even though their max health does get set to 30 hearts
+- Fixed the "/health set" command not setting players' health, despite setting their max health
+- Fixed task books not containing any actual text
+- Fixed failing tasks that remove hearts not showing a title
+- Removed the redundant ".0" from the title shown when succeeding or failing a task that edits health
+- Fixed the previous task's ID lingering in a player's persistent data after succeeding or failing

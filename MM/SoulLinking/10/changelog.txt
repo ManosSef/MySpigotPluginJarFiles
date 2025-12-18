@@ -1,0 +1,4 @@
+BUILD 10
+
+Fixes
+- Fixed pairs' health bars sometimes not syncing with doImmediateRespawn enabled

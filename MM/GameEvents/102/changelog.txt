@@ -1,0 +1,7 @@
+BUILD 102
+
+Changes
+- The plugin now depends on Alexandria, with target version 1.0.0-build14
+- Options in the config.yml file are now validated when the plugin is enabled and the plugin is disabled if any of them are found to be invalid (OTHER-240)
+- Values in the "blocked-game-events" option are now saved in lowercase, but can still be read properly when uppercase
+- The /gameevents command now tab completes game events in lowercase, but can still accept them in any case

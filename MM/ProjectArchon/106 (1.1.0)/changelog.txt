@@ -1,0 +1,8 @@
+BUILD 106 (1.1.0)
+
+SINCE LAST STABLE RELEASE (1.0.0)
+
+Changes
+- The plugin now depends on Alexandria, with target version 1.0.0-build14
+- The "current-border-size" option is now saved to and read from a new file called data.yml instead of config.yml
+	- If the value is not set in data.yml but is set in config.yml then it is still read from config.yml for backward compatibility

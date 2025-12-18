@@ -1,0 +1,26 @@
+BUILD 4
+
+Additions
+- Added the /health command
+	- Syntax: /health (add|set) <player> <health>
+	- "/health add" adds the specified amount to the specified player's health
+		- Replaces the previous /edithealth command
+	- "/health set" sets the specified player's health to the specified amount (OTHER-219)
+	- Requires the "semihardcoresecrettasks.health" permission
+- Added the /setbuttons command
+	- Syntax: /setbuttons
+	- Allows you to set the Secret Keeper's button positions by pressing three buttons and the item spawning position by placing bedrock
+	- Requires the "semihardcoresecrettasks.setbuttons" permission
+
+Changes
+- Removed the /edithealth command and the "semihardcoresecrettasks.edithealth" permission
+- Players that the plugin hasn't seen before now have their health set to 30 hearts (OTHER-224)
+
+Fixes
+- OTHER-222 - The titles shown when rolling tasks flash for a brief moment
+- OTHER-223 - The success message of /rolltasks is missing a period when only one player is getting a task
+- OTHER-225 - Books given by the plugin have no data other than the persistent task ID
+- OTHER-226 - Succeeding or failing tasks that edit health shows a "+0.0 heart" title when the health doesn't change
+- OTHER-227 - Titles shown when health is modified are extremely accurate
+- OTHER-228 - Succeeding a task while on 1 life gives extra hearts that can overflow 30
+- OTHER-229 - Succeeding a task while on more than 1 life and 30 or more hearts removes hearts

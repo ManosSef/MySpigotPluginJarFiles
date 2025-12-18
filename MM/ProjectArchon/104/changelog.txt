@@ -1,0 +1,4 @@
+BUILD 104
+
+Fixes
+- The plugin now checks if the Alexandria plugin on the server is correct and targets version 1.0.0-build14

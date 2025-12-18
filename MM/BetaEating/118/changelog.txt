@@ -1,0 +1,4 @@
+BUILD 118
+
+Fixes
+- Fixed ghost items created by canceling shift-clicks and off hand swaps on stacked food items
