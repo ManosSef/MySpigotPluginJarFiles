@@ -1,0 +1,4 @@
+BUILD 102
+
+Fixes
+- The plugin now supports Minecraft version 1.21.11 Unobfuscated
