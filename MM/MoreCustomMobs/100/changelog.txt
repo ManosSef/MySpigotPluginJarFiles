@@ -1,0 +1,20 @@
+BUILD 100
+
+Additions
+- Added the /togglepets command
+	- Toggles pet spawning from killing mobs
+	- Syntax: /togglepets
+
+Changes
+- The plugin now requires Java 11
+- The plugin now supports all Minecraft versions since 1.8
+	- Shooter zombies cannot be spawned before 1.12, and pets don't spawn before 1.13
+- The plugin now depends on Alexandria, with target version 1.0.0-build14
+- Added a usage string to /spawncustommob
+- The "spawn-pets" option in the config.yml file is now validated when the plugin is enabled (OTHER-241)
+	- The plugin is disabled when the Minecraft version is 1.13 or newer and the option's value is invalid
+- The plugin no longer overwrites changes to "spawn-pets" in the config.yml file when disabled
+
+Fixes
+- OTHER-37 - The error message sent when running /spawncustommob with no arguments is missing a period
+- OTHER-38 - All arguments of /spawncustommob except the first one tab complete the first argument's possible values

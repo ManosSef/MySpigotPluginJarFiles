@@ -1,0 +1,7 @@
+BUILD 104
+
+Changes
+- Pets can now be right-clicked by their owner to make them despawn
+- Pets can no longer spawn in Minecraft versions 1.20.3 and above
+	- Previously they would throw errors when attempting to spawn
+- "/spawncustommob pet" and "/togglepets" no longer work in versions of Minecraft where pets can't spawn
