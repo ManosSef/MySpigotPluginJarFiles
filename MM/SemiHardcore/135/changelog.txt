@@ -1,0 +1,4 @@
+BUILD 135
+
+Fixes
+- SH-31 - Data from lives.yml is not removed if the player already has lives or logs in after the plugin is enabled

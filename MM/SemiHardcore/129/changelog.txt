@@ -1,0 +1,4 @@
+BUILD 129
+
+Fixes
+- Comments in config.yml and messages.yml are now kept when saving

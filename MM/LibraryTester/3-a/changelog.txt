@@ -1,0 +1,5 @@
+BUILD 3-a
+
+Changes
+- The plugin now depends on Alexandria version 1.0.0-build14
+- The plugin now checks https://raw.githubusercontent.com/ManosSef/SemiHardcoreAddonList/refs/heads/main/ooh_whats_this.txt for updates when enabled

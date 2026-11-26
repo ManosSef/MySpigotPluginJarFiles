@@ -1,0 +1,16 @@
+BUILD 133
+
+Changes
+- The plugin now validates the messages.yml file similarly to config.yml
+- Removed the lives.yml file. Lives are now stored in players' NBT data
+	- If the file still exists from a previous version, the plugin transfers life data from it to NBT and deletes the file when enabled
+- API changes:
+	- Removed the `LifeData` class
+	- Removed methods `getLifeData` and `getLivesFile` from `SemiHardcore`
+	- `LifeChanges#getLives(Player)` now throws `NoSuchElementException` if the specified player has no lives yet
+	- Removed methods `getSacrificedPlayers`, `addSacrificedPlayer`, and `removeSacrificedPlayer` from `LifeChanges`
+
+Fixes
+- The life limit can now be set to 0 again
+- API fixes:
+	- `LifeChanges#setLivesZeroAndKill(Player)` now calls a `PlayerLifeChangeEvent`

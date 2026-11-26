@@ -1,0 +1,4 @@
+BUILD 2
+
+Changes
+- The plugin no longer explicitly saves the config.yml file when enabled

@@ -1,0 +1,14 @@
+BUILD 138
+
+Additions
+- Added an option to config.yml: "disable-in-worlds" (SH-28)
+	- Format: list of strings
+	- Specifies the names of worlds in which dying does not remove lives and giving lives away is disabled
+	- Does not affect /addlife, /setlives, and /revive
+- Added messages to messages.yml:
+	- "givelife-command-errors.donor-in-disabled-world": appears when a player tries to use /givelife in a world where life changes are disabled
+	- "givelife-command-errors.receiver-in-disabled-world": appears when a player tries to give a life to a player in a world where life changes are disabled
+- API additions:
+	- `Options#disableInWorlds()`: returns the value of the "disable-in-worlds" option
+	- `Messages#givelifeDonorInDisabledWorld()`: returns the "givelife-command-errors.donor-in-disabled-world" message
+	- `Messages#givelifeReceiverInDisabledWorld()`: returns the "givelife-command-errors.receiver-in-disabled-world" message

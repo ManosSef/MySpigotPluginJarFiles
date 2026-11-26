@@ -1,0 +1,18 @@
+BUILD 139
+
+Additions
+- Added a new message to messages.yml: "command-messages.canceled"
+	- Appears when a life change caused by a command is canceled
+- API additions:
+	- `Messages#commandCanceled()`: returns the "command-messages.canceled" message
+	- `PlayerLifeChangeEvent#getOldLives()`: returns the life count before the life change
+
+Changes
+- API changes:
+	- `PlayerLifeChangeEvent`, `PlayerLifeGiveawayEvent`, `PlayerReviveEvent`, and `PlayerSacrificeEvent` can now be canceled (SH-29)
+		- Canceling them prevents their respective life changes from happening
+	- `LifeChanges#setLives(Player, int)`, `LifeChanges#setLivesZeroAndKill(Player)`, and `LifeChanges#addLife(Player)` now return boolean: false if the events they call are canceled and true otherwise
+	- `LifeChanges#revivePlayer(Player)` and `LifeChanges#revivePlayer(Player, int)` now return boolean: false if the player is alive or the events they call are canceled and true otherwise
+
+Fixes
+- Added a comment about the "disable-in-worlds" option to the default config.yml

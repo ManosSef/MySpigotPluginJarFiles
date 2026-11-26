@@ -1,0 +1,4 @@
+BUILD 109
+
+Changes
+- The plugin now logs files it tries to read puzzles from

@@ -1,0 +1,23 @@
+BUILD 126
+
+Additions
+- API additions:
+	- `Messages#color(String)`: returns the same string but with color codes using ampersands instead of section signs translated
+
+Changes
+- The plugin now depends on Alexandria, with target version 1.0.0
+- The plugin no longer checks its add-ons for updates
+- API changes:
+	- `Messages` is now a record
+		- All previously public fields are now private, and their values are instead accessible by instance methods with the same names
+	- Removed the `SemiHardcoreYmlFile` class. Use `me.manossef.api.alexandria.files.YamlFile` instead
+	- Removed the `UpdateChecker` class. Use the classes from `me.manossef.api.alexandria.updates` instead
+	- Removed methods `isAddonToBeChecked`, `checkAddonForUpdates`, `getOfficialAddonList`, and `getDeadPlayersFile` from `SemiHardcore`
+	- Made `SemiHardcore#isUnsupportedVersion` private
+	- Removed methods `setLivesUpToLimit`, `setDead`, `addLifeUpToLimit`, and `respectLivesLimit` from `LifeChanges`
+	- Removed methods `getMinimumStartingLives`, `getMaximumStartingLives`, `hasHardcoreHearts`, `forcesHardDifficulty`, `getLivesLimit`, `canPlayersBeGenerous`, `doesLightningStrikeOnLastDeath`, `canPlayersSacrificeToReviveSomeoneDead`, and `canPlayersGiveAwayLastLife` from `Options`
+
+Fixes
+- SH-4 - The update checker's message is inconsistent as to where it appears
+- SH-26 - The second message printed by the update checker when there is a newer plugin version available is missing a colon
+- SH-27 - The default config.yml's comments are not saved to config.yml files created by the plugin

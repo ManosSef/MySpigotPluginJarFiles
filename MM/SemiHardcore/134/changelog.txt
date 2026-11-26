@@ -1,0 +1,5 @@
+BUILD 134
+
+Fixes
+- Life data from lives.yml is no longer ignored for existing but not yet online players
+	- It is now kept in the file until those players log in

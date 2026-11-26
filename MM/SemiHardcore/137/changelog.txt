@@ -1,0 +1,4 @@
+BUILD 137
+
+Fixes
+- Fixed the plugin not enabling if the "revive-message" path in messages.yml doesn't have a string value

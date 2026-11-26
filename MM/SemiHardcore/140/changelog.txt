@@ -1,0 +1,12 @@
+BUILD 140
+
+Additions
+- Added new messages to messages.yml:
+	- "setlives-command-messages.same-as-current": appears when /setlives tries to set a player's life count to what it's already set to
+	- "setlives-command-messages.same-as-current-hit-limit": appears when /setlives tries to set a player's life count to something greater than the life limit when the player's life count is at the life limit
+- API additions:
+	- `Messages#setlivesSameAsCurrent()`: returns the "setlives-command-messages.same-as-current" message
+	- `Messages#setlivesSameAsCurrentHitLimit()`: returns the "setlives-command-messages.same-as-current-hit-limit" message
+
+Fixes
+- /setlives now shows a failure message when trying to set a player's life count to what it's already set to

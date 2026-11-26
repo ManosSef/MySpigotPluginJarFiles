@@ -1,0 +1,9 @@
+BUILD 107
+
+Changes
+- The plugin now depends on Alexandria, with target version 1.0.0-build14
+- The plugin now reads all YML files in the plugin's folder as puzzles
+	- Only one puzzle is allowed per file, under the "puzzle" configuration section
+	- Files in subdirectories are also checked
+- The plugin no longer checks a GitHub repository for puzzles
+- Removed the "/squaredle download" subcommands

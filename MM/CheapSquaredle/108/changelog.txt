@@ -1,0 +1,5 @@
+BUILD 108
+
+Changes
+- The plugin no longer reads from files without a .yml extension
+- Invalid puzzle files no longer prevent all files from loading

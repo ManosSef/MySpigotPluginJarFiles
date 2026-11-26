@@ -1,0 +1,73 @@
+BUILD 141 (3.0.0)
+
+SINCE LAST STABLE RELEASE (2.7.3)
+
+Additions
+- Added an option to config.yml: "disable-in-worlds" (SH-28)
+	- Format: list of strings
+	- Specifies the names of worlds in which dying does not remove lives and giving lives away is disabled
+	- Does not affect /addlife, /setlives, and /revive
+- Added new messages to messages.yml:
+	- "command-messages.canceled": appears when a life change caused by a command is canceled
+	- "givelife-command-errors.donor-in-disabled-world": appears when a player tries to use /givelife in a world where life changes are disabled
+	- "givelife-command-errors.receiver-in-disabled-world": appears when a player tries to give a life to a player in a world where life changes are disabled
+	- "revive-command-messages.limited-success": appears when /revive succeeds but the specified life count was above the life limit
+	- "revive-message.plural": appears when a player is revived using /revive and they receive more than one life
+	- "setlives-command-messages.same-as-current": appears when /setlives tries to set a player's life count to what it's already set to
+	- "setlives-command-messages.same-as-current-hit-limit": appears when /setlives tries to set a player's life count to something greater than the life limit when the player's life count is at the life limit
+- API additions:
+	- `LifeChanges#reviveMessage(Player)`: sends the message sent by /revive to the specified player
+	- `LifeChanges#revivePlayer(Player, int)`: revives the specified player and gives them the specified life count
+	- `Messages#color(String)`: returns the same string but with color codes using ampersands instead of section signs translated
+	- `Messages#commandCanceled()`: returns the "command-messages.canceled" message
+	- `Messages#givelifeDonorInDisabledWorld()`: returns the "givelife-command-errors.donor-in-disabled-world" message
+	- `Messages#givelifeReceiverInDisabledWorld()`: returns the "givelife-command-errors.receiver-in-disabled-world" message
+	- `Messages#reviveLimitedSuccess()`: returns the "revive-command-messages.limited-success" message
+	- `Messages#revivePlural()`: returns the "revive-message.plural" message
+	- `Messages#setlivesSameAsCurrent()`: returns the "setlives-command-messages.same-as-current" message
+	- `Messages#setlivesSameAsCurrentHitLimit()`: returns the "setlives-command-messages.same-as-current-hit-limit" message
+	- `Options#disableInWorlds()`: returns the value of the "disable-in-worlds" option
+	- `PlayerLifeChangeEvent#getOldLives()`: returns the life count before the life change
+	- `PlayerReviveEvent#getLives()`: returns the number of lives the player received upon revival
+
+Changes
+- The plugin now depends on Alexandria, with target version 1.0.0
+- The plugin no longer checks its add-ons for updates
+- /revive now optionally takes an integer as its second argument, giving the player that amount of lives upon revival instead of 1 (SH-30)
+- The "hardcore-hearts" configuration option is now set to false by default
+- config.yml and messages.yml now have their options saved to them immediately after being loaded instead of when the plugin is disabled
+- The plugin now validates the messages.yml file similarly to config.yml
+- The "revive-command-messages.success" message in messages.yml now has a %lives% placeholder, which is filled in with the life count received by the revived player
+- Some messages in messages.yml have been renamed (the old names are automatically upgraded by the plugin to the new ones if found):
+	- "revive-message" to "revive-message.singular"
+	- "setlives-command-messages.invalid-lives" to "command-messages.invalid-lives"
+- Removed the lives.yml file. Lives are now stored in players' NBT data
+	- If the file still exists from a previous version, the plugin transfers life data from it to NBT and deletes the file
+- API changes:
+	- `LifeChanges#addLife(Player)`, `LifeChanges#setLives(Player, int)`, and `LifeChanges#setLivesZeroAndKill(Player)` now return boolean: false if the events they call are canceled and true otherwise
+	- `LifeChanges#revivePlayer(Player)` and `LifeChanges#revivePlayer(Player, int)` now return boolean: false if the player is alive or the events they call are canceled and true otherwise
+	- `LifeChanges#getLives(Player)` now throws `NoSuchElementException` if the specified player has no lives yet
+	- `Messages` is now a record
+		- All previously public fields are now private, and their values are instead accessible by instance methods with the same names
+	- `PlayerLifeChangeEvent`, `PlayerLifeGiveawayEvent`, `PlayerReviveEvent`, and `PlayerSacrificeEvent` can now be canceled (SH-29)
+		- Canceling them prevents their respective life changes from happening
+	- Renamed `Messages#revive()` to `Messages#reviveSingular()`
+	- Renamed `Messages#setlivesInvalidLives()` to `Messages#commandInvalidLives()`
+	- Removed methods `addLifeUpToLimit`, `addSacrificedPlayer`, `getSacrificedPlayers`, `removeSacrificedPlayer`, `respectLivesLimit`, `setDead`, and `setLivesUpToLimit` from `LifeChanges`
+	- Removed the `LifeData` class
+	- Removed methods `canPlayersBeGenerous`, `canPlayersGiveAwayLastLife`, `canPlayersSacrificeToReviveSomeoneDead`, `doesLightningStrikeOnLastDeath`, `forcesHardDifficulty`, `getLivesLimit`, `getMaximumStartingLives`, `getMinimumStartingLives`, and `hasHardcoreHearts` from `Options`. Use the equivalent methods named after the record components instead
+	- Removed methods `checkAddonForUpdates`, `getDeadPlayersFile`, `getLifeData`, `getLivesFile`, `getOfficialAddonList`, and `isAddonToBeChecked` from `SemiHardcore`
+	- Made `SemiHardcore#isUnsupportedVersion` private
+	- Removed the `SemiHardcoreYmlFile` class. Use `me.manossef.api.alexandria.files.YamlFile` instead
+	- Removed the `UpdateChecker` class. Use the classes from `me.manossef.api.alexandria.updates` instead
+
+Fixes
+- SH-4 - The update checker's message is inconsistent as to where it appears
+- SH-26 - The second message printed by the update checker when there is a newer plugin version available is missing a colon
+- SH-27 - The default config.yml's comments are not saved to config.yml files created by the plugin
+- The life limit can now be set to 0 again
+- /setlives now shows a failure message when trying to set a player's life count to what it's already set to
+- Comments in config.yml and messages.yml are now kept when saving
+- The plugin now prefers messages beginning with "command-messages." over the old command-specific versions if both are set
+- API fixes:
+	- `LifeChanges#setLivesZeroAndKill(Player)` now calls a `PlayerLifeChangeEvent`

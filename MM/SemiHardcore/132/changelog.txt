@@ -1,0 +1,4 @@
+BUILD 132
+
+Fixes
+- Removed an extra newline from the default config.yml and messages.yml

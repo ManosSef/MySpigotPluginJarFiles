@@ -1,0 +1,25 @@
+BUILD 136
+
+Additions
+- Added messages to messages.yml:
+	- "revive-message.plural": appears when a player is revived using /revive and they receive more than one life
+	- "revive-command-messages.limited-success": appears when /revive succeeds but the specified life count was above the life limit
+- API additions:
+	- `Messages#revivePlural()`: returns the "revive-message.plural" message
+	- `Messages#reviveLimitedSuccess()`: returns the "revive-command-messages.limited-success" message
+	- `LifeChanges#revivePlayer(Player, int)`: revives the specified player and gives them the specified life count
+	- `LifeChanges#reviveMessage(Player)`: sends the message sent by /revive to the specified player
+	- `PlayerReviveEvent#getLives()`: returns the number of lives the player received upon revival
+
+Changes
+- /revive now optionally takes an integer as its second argument, giving the player that amount of lives upon revival instead of 1 (SH-30)
+- The "revive-command-messages.success" message in messages.yml now has a %lives% placeholder, which is filled in with the life count received by the revived player
+- Some messages in messages.yml have been renamed (the old names are automatically upgraded by the plugin to the new ones if found):
+	- "revive-message" to "revive-message.singular"
+	- "setlives-command-messages.invalid-lives" to "command-messages.invalid-lives"
+- API changes:
+	- Renamed `Messages#revive()` to `Messages#reviveSingular()`
+	- Renamed `Messages#setlivesInvalidLives()` to `Messages#commandInvalidLives()`
+
+Fixes
+- The plugin now prefers messages beginning with "command-messages." over the old command-specific versions if both are set

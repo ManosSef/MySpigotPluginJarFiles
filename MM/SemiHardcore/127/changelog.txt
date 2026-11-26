@@ -1,0 +1,5 @@
+BUILD 127
+
+Changes
+- The "hardcore-hearts" configuration option is now set to false by default
+- config.yml and messages.yml now have their options saved to them immediately after being loaded instead of when the plugin is disabled

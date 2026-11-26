@@ -1,0 +1,8 @@
+BUILD 15
+
+Additions
+- Added javadocs to all public classes, methods and fields
+
+Changes
+- API changes:
+	- `SimpleUpdateChecker#checkForUpdates` no longer checks for updates asynchronously

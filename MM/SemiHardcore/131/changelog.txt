@@ -1,0 +1,4 @@
+BUILD 131
+
+Fixes
+- Added a blank comment at the bottom of config.yml and messages.yml so that that's the comment that gets stripped

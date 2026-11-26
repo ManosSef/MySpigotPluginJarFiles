@@ -1,0 +1,4 @@
+BUILD 130
+
+Fixes
+- The last comment line at the bottom of config.yml and messages.yml is no longer stripped

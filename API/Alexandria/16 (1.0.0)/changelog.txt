@@ -1,0 +1,6 @@
+BUILD 16 (1.0.0)
+
+SINCE LAST BUILD (15)
+
+Fixes
+- Fixed some javadoc warnings
